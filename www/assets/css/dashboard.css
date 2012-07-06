@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+
+}
+
+/* header styles */
+#dashHeader{
+	width: 100%;
+	height: 70px;
+	background-color: #EBEBEB;
+    vertical-align: middle;
+}
+
+#branding{
+    float: left;
+}
+
+#navigation{
+    float: right;
+    vertical-align: middle;
+}
+
+#search{
+    float: right;
+    width: 200px;
+    height: 30px;
+    border: 2px solid #CFCFCF;
+    border-radius: 15px;
+    vertical-align: middle;
+    margin: 15px 30px 0px 30px;
+}
+
+#searchString{
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+#menubar ul, #menubar li{
+    list-style: none;
+    display: inline;
+}
+
+/* panel styles */
+/* layout */
+.panel{
+    border: 2px solid #CFCFCF;
+    border-radius: 15px;
+    background-color: #EBEBEB;
+}
+
+#featurePanel{
+    width: 52%;
+    margin-left: 20px;
+    float: left;
+    height: 600px;
+}
+
+#sidePanels{
+    width: 40%;
+    margin-right: 20px;
+    float: right;
+    height: 600px;
+}
+
+#sidePanelTop{
+    height: 360px;
+    margin-bottom: 28px
+}
+
+#sidePanelBottom{
+    height: 260px
+}
+
+#fullPanel{
+
+}
+
+/* panel content */
+.panelHeader{
+    height: 40px;
+    padding: 15px;
+}
+
+.titleBlock{
+    float: left;
+}
+
+.panelActions{
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
+}
+.closeBtn{
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/closeButton.png');
+    float: right;
+    margin-left: 20px;
+}
+
+.panelBody{
+    border: 2px solid #CFCFCF;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    margin: 0px 20px 0px 20px;
+}
+
+#featurePanel .panelBody{
+    height: 510px;
+}
+
+#sidePanelTop .panelBody{
+    height: 270px;
+}
+
+#sidePanelBottom .panelBody{
+    height: 170px;
+}

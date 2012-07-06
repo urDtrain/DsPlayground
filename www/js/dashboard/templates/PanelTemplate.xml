@@ -1,0 +1,12 @@
+<div class="panelHeader">
+	<div class="titleBlock">
+		<div id="panelTitle">{{title}}</div>
+		<div id="subTitle">{{subTitle}}</div>
+	</div>
+
+	<div class="panelActions">
+		<button class="actionBtn">{{actionLabel}}</button>
+		<div class="closeBtn"></div>
+	</div>
+</div>
+<div class="panelBody"></div>

@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Dashboard</title>
+	<!-- Style declarations -->
+	<link type="text/css" rel="stylesheet" href="assets/css/dashboard.css"/>
+
+	<!-- library includes -->
+	<script type="text/javascript" src="lib/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="lib/jquery-ui-1.8.20.custom.min.js"></script>
+	<script type="text/javascript" src="lib/ember-0.9.8.1.min.js"></script>
+	
+	<!-- application includes -->
+	<script type="text/javascript" src="js/dashboard/model/PanelVO.js"></script>
+	<script type="text/javascript" src="js/dashboard/DashApp.js"></script>
+	<script type="text/javascript" src="js/dashboard/view/PanelView.js"></script>
+
+	<!-- template includes -->
+	<script type="text/x-handlebars" data-template-name="panel-template">
+		<div class="panelHeader">
+			<div class="titleBlock">
+				<div id="panelTitle">{{title}}</div>
+				<div id="subTitle">{{subTitle}}</div>
+			</div>
+		
+			<div class="panelActions">
+				{{#if actionLabel}}
+				<button class="actionBtn">{{actionLabel}}</button>
+				{{/if}}
+				<div class="closeBtn"></div>
+			</div>
+		</div>
+		<div class="panelBody"></div>
+	</script>
+    
+</head>
+
+<body>
+	<div id="dashHeader">
+		<h1 id="branding">SnapFlow</h1>
+		<div id="search"><span id="searchString">SEARCH</span></div>
+		<div id="navigation">
+				<ul id="menubar">
+					<li id="login">DARIN KOHLES</li>
+					<li>|</li>
+					<li id="applications">MY APPS</li>
+					<li>|</li>
+					<li id="admin">ADMIN</li>
+					<li>|</li>
+					<li id="help">HELP</li>
+				</ul>
+		</div>
+	</div>
+	
+	<h1 style="margin-left:20px">ACME DASHBOARD</h1>
+	
+	<div id="featurePanel" class="panel"></div>
+	
+	<div id="sidePanels">
+		<div id="sidePanelTop" class="panel"></div>
+		<div id="sidePanelBottom" class="panel"></div>
+	</div>
+</body>
+</html>

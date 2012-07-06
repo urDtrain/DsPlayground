@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+		"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title></title>
+	<!-- library includes -->
+	<script type="text/javascript" src="lib/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="lib/jquery-ui-1.8.20.custom.min.js"></script>
+	<script type="text/javascript" src="lib/ember-0.9.8.1.min.js"></script>
+
+	<!-- application includes -->
+	<script type="text/javascript" src="js/dashboard/model/PanelVO.js"></script>
+	<script type="text/javascript" src="js/test/TestApp.js"></script>
+	<script type="text/javascript" src="js/test/MainView.js"></script>
+	<script type="text/javascript" src="js/test/NestedView.js"></script>
+
+	<!-- template includes -->
+	<script type="text/x-handlebars" data-template-name="nested">
+		{{#each TestApp.ac}}
+		<div class="panelHeader">
+			<div class="titleBlock">
+				<div id="panelTitle">{{title}}</div>
+				<div id="subTitle">{{subTitle}}</div>
+			</div>
+		</div>
+		{{/each}}
+	</script>
+
+	<!-- template includes -->
+	<script type="text/x-handlebars" data-template-name="main">
+		yo
+		{{view TestApp.NestedView}}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
