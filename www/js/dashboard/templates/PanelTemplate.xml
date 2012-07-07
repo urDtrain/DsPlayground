@@ -9,4 +9,4 @@
 		<div class="closeBtn"></div>
 	</div>
 </div>
-<div class="panelBody"></div>
+<div class="panelBody">{{view App.VariableContent}}</div>
