@@ -54,23 +54,23 @@ body{
     width: 52%;
     margin-left: 20px;
     float: left;
-    height: 600px;
+    min-height: 600px;
 }
 
 #sidePanels{
     width: 40%;
     margin-right: 20px;
     float: right;
-    height: 600px;
+    min-height: 600px;
 }
 
 #sidePanelTop{
-    height: 360px;
+    min-height: 360px;
     margin-bottom: 28px
 }
 
 #sidePanelBottom{
-    height: 260px
+    min-height: 260px
 }
 
 #fullPanel{
@@ -81,6 +81,7 @@ body{
 .panelHeader{
     height: 40px;
     padding: 15px;
+    cursor: move;
 }
 
 .titleBlock{
@@ -91,6 +92,7 @@ body{
     float: right;
     display: inline-block;
     vertical-align: middle;
+    cursor: default;
 }
 .closeBtn{
     width: 20px;

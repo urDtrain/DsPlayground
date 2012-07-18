@@ -5,34 +5,11 @@
 <title>Playground</title>
 	<!-- Style declarations -->
 	<link type="text/css" rel="stylesheet" href="assets/css/dashboard.css"/>
+	<link type="text/css" rel="stylesheet" href="assets/css/jquery-ui-1.8.20.custom.css"/>
 
 	<!-- library includes -->
-	<script type="text/javascript" src="lib/jquery-1.7.2.min.js"></script>
-	<script type="text/javascript" src="lib/jquery-ui-1.8.20.custom.min.js"></script>
-	<script type="text/javascript" src="lib/ember-0.9.8.1.min.js"></script>
-	
-	<!-- application includes -->
-	<script type="text/javascript" src="js/dashboard/model/PanelVO.js"></script>
-	<script type="text/javascript" src="js/dashboard/DashApp.js"></script>
-	<script type="text/javascript" src="js/dashboard/view/PanelView.js"></script>
-
-	<!-- template includes -->
-	<script type="text/x-handlebars" data-template-name="panel-template">
-		<div class="panelHeader">
-			<div class="titleBlock">
-				<div id="panelTitle">{{title}}</div>
-				<div id="subTitle">{{subTitle}}</div>
-			</div>
-		
-			<div class="panelActions">
-				{{#if actionLabel}}
-				<button class="actionBtn">{{actionLabel}}</button>
-				{{/if}}
-				<div class="closeBtn"></div>
-			</div>
-		</div>
-		<div class="panelBody"></div>
-	</script>
+	<script type="text/javascript" src="js/dashboard/data/RequireConfig.js"></script>
+	<script data-main="js/dashboard/DashApp" src="lib/require-jq.js"></script>
     
 </head>
 

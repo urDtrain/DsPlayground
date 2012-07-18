@@ -1,6 +1,6 @@
-PanelVO = Ember.Object.extend({
+PanelModel = Ember.Object.extend({
     title: null,
     subTitle: null,
     actionLabel: null,
     classNames: ['']
-})
+});
