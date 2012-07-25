@@ -1,5 +1,5 @@
 DashApp.VariableContentContainerController = Em.Controller.extend({
-    init: function(){
-        console.log('vc init');
+    whoAmI: function(t){
+        console.log(t);
     }
 });

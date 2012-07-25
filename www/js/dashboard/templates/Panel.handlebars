@@ -1,12 +1,14 @@
 <div class="panelHeader">
 	<div class="titleBlock">
-		<div id="panelTitle">{{title}}</div>
-		<div id="subTitle">{{subTitle}}</div>
+		<div id="panelTitle">{{view.title}}</div>
+		<div id="subTitle">{{view.subTitle}}</div>
 	</div>
 
 	<div class="panelActions">
-		<button class="actionBtn">{{actionLabel}}</button>
 		<div class="closeBtn"></div>
+		{{#if view.actionLabel}}
+		<button class="actionBtn">{{view.actionLabel}}</button>
+		{{/if}}
 	</div>
 </div>
-<div class="panelBody"></div>
+<div class="panelBody">{{view DashApp.VariableContentContainerView}}</div>

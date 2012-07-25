@@ -54,27 +54,27 @@ body{
     width: 52%;
     margin-left: 20px;
     float: left;
-    min-height: 600px;
+    min-height: 60px;
+    height: 500px;
 }
 
 #sidePanels{
     width: 40%;
     margin-right: 20px;
     float: right;
-    min-height: 600px;
+    min-height: 60px;
+    height: 500px;
 }
 
 #sidePanelTop{
-    min-height: 360px;
-    margin-bottom: 28px
+    min-height: 60px;
+    height: 240px;
+    margin-bottom: 15px;
 }
 
 #sidePanelBottom{
-    min-height: 260px
-}
-
-#fullPanel{
-
+    min-height: 60px;
+    height: 240px;
 }
 
 /* panel content */
@@ -82,6 +82,11 @@ body{
     height: 40px;
     padding: 15px;
     cursor: move;
+    min-width: 300px;
+}
+
+.ui-draggable-dragging .panelHeader{
+    cursor: pointer;
 }
 
 .titleBlock{
@@ -90,15 +95,22 @@ body{
 
 .panelActions{
     float: right;
-    display: inline-block;
-    vertical-align: middle;
-    cursor: default;
+    display: inline;
+    vertical-align: top;
+    cursor: ;
 }
 .closeBtn{
     width: 20px;
     height: 20px;
     background-image: url('../images/closeButton.png');
     float: right;
+    top: 0px;
+    margin-left: 20px;
+}
+
+.actionBtn{
+    float: right;
+    top: 0px;
     margin-left: 20px;
 }
 
@@ -107,16 +119,10 @@ body{
     border-radius: 15px;
     background-color: #FFFFFF;
     margin: 0px 20px 0px 20px;
-}
-
-#featurePanel .panelBody{
-    height: 510px;
-}
-
-#sidePanelTop .panelBody{
-    height: 270px;
-}
-
-#sidePanelBottom .panelBody{
-    height: 170px;
+    position: absolute;
+    height: inherit;
+    top: 65px;
+    left: 0px;
+    right: 0px;
+    bottom: 15px;
 }

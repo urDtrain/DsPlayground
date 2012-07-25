@@ -1,8 +1,9 @@
 define(['control/VariableContentContainerController'], function(){
     DashApp.VariableContentContainerView = Em.ContainerView.extend({
+        viewClass: 'VariableContentContainerView',
         controller: DashApp.VariableContentContainerController.create(),
-        init: function(){
-            console.log('vcv init');
+        didInsertElement: function(){
+            this.controller.whoAmI(this);
         }
     });
 });

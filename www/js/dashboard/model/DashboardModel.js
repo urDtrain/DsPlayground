@@ -25,6 +25,7 @@ DashApp.DashboardModel = Ember.Object.create({
     statsData:PanelModel.create({
         title:'STATISTICS)',
         subTitle:'Darin Kohles',
+        actionLabel: '',
         classNames:['stats']
     })
 
